@@ -10,9 +10,9 @@ function render()
 
 let CATALOG = [];
 
-// fetch('server/catalog.json')
+// fetch('http://myjson.dit.upm.es/api/bins/7v67')
 
-fetch('http://myjson.dit.upm.es/api/bins/7v67')
+fetch('server/catalog.json')
   .then(res => res.json())
   .then(body => 
     {
