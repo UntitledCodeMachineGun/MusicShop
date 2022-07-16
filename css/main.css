@@ -1,5 +1,19 @@
 :root{
+  --color-white: #fff;
   --color-light: #f8f9fa;
+  --color-unaccent: #808080;
+
+  --spacing-small: 10px;
+  --spacing-meidum: 15px;
+  --spacing-large: 30px;
+
+  --border-radius: 3px;
+
+  --radial-gradient: radial-gradient(circle, rgba(174,184,238,1) 0%, rgba(190,233,148,1) 100%);
+	--box-shadow: 
+		0 16px 24px 2px rgba(33,37,41,.02), 
+		0 6px 30px 5px rgba(33,37,41,.04), 
+		0 8px 10px -5px rgba(33,37,41,.1);
 }
 
 *{
