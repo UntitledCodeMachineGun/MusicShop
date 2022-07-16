@@ -22,6 +22,8 @@ class Products
       elemtnt.classList.remove(this.classNameActive);
       elemtnt.innerHTML = this.labelAdd;
     }
+
+    headerPage.render(products.length);
   }
 
   render()
@@ -51,7 +53,7 @@ class Products
         <span class="products-element-name">${album}</span>
         <img class="products-element-img" src="${img}"/>
         <span class="products-element-price">💸 ${price.toLocaleString()} UAH</span>
-        <button class="products-element-btn ${activeClass}"onclick="products.handleSetLocationStorage(this, '${id}')">${activeText}</button>
+        <button class="products-element-btn ${activeClass}"onclick="productsPage.handleSetLocationStorage(this, '${id}')">${activeText}</button>
       </li>
       `;
     });
@@ -67,5 +69,5 @@ class Products
   }
 }
 
-const products = new Products();
-products.render();
+const productsPage = new Products();
+productsPage.render();
