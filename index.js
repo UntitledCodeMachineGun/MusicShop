@@ -6,7 +6,7 @@ function render()
   productsPage.render();
 }
 
-spinnerPage.render();
+//spinnerPage.render();
 
 let CATALOG = [];
 
@@ -17,15 +17,15 @@ fetch('http://myjson.dit.upm.es/api/bins/7v67')
   .then(body => 
     {
       CATALOG = body;
-
-      setTimeout(() =>
-      {
-        spinnerPage.handleClear();
-        render();
-      }, 1000);
+      render();
+     // setTimeout(() =>
+     //{
+     //   spinnerPage.handleClear();
+     //   render();
+     // }, 1000);
     })
   .catch(error => 
     {
-      spinnerPage.handleClear();
+      //spinnerPage.handleClear();
       errorPage.render();
     });
