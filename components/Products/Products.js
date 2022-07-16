@@ -13,7 +13,7 @@ class Products
         <span class="products-element-name">${album}</span>
         <img class="products-element-img" src="${img}"/>
         <span class="products-element-price">💸 ${price.toLocaleString()} UAH</span>
-        <button class="products-element-btn products-element-btn-active">Add to cart</button>
+        <button class="products-element-btn">Add to cart</button>
       </li>
       `;
     });
@@ -29,5 +29,5 @@ class Products
   }
 }
 
-const PRODUCTS = new Products();
-PRODUCTS.render();
+const products = new Products();
+products.render();
