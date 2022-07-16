@@ -26,5 +26,6 @@ fetch('http://myjson.dit.upm.es/api/bins/7v67')
     })
   .catch(error => 
     {
-      console.log(error);
+      spinnerPage.handleClear();
+      errorPage.render();
     });
